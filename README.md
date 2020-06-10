@@ -29,7 +29,7 @@ https://www.health.mil/Military-Health-Topics/Technology/Support-Areas/Geographi
 
 ![Connect to MS SQL Server](img/prepbuilder_step1_connect.png)
 
-# Build your Flow #
+# Build Your Flow #
 
 * Once you've dragged your data source (in this instance ref_dmis) to the flow, create an output object.
   * Change the output destination from 'Save to file' to 'Publish' as a data source.'
@@ -66,30 +66,30 @@ https://www.health.mil/Military-Health-Topics/Technology/Support-Areas/Geographi
 ![Flat file setup](img/prepbuilder_step5_directfile_connects.png)
 
 
-# Check out your flow on the Tableau Server #
+# Check Out Your Flow on the Tableau Server #
 
 Your browser should automatically load the flow on the Tableau server.
 
 ![Check out the flow on the server](img/prepbuilder_step6_doublecheck_on_server.png)
 
-# Execute the flow on the server #
+# Execute the Flow on the Tableau Server #
 
 Run the flow directly from the browser.
 
 ![Run your flow](img/prepbuilder_step7_runflow.png)
 
-# Watch for the pending status #
+# Watch for the Pending Status #
 
 ![Watch the pending status](img/prepbuilder_step7_pending.png)
 
-# Flow error #
+# Flow Error Detected #
 
 Uh oh, we have an error! The flow has failed and likely generated an email to you in your email inbox stating a failed flow run.
 Examine your flow and see where the issue is.
 
 ![We have an error](img/prepbuilder_step8_error.png)
 
-# Check out your connection to the SQL Server #
+# Check Your Connection to the SQL Server #
 
 * Correct the error by adding a port 1433 to the MSSQL db.   If your MSSQL uses a different port than the default, use that one instead.  Ask your MSSSQL DBA for that information.  But try 1433 first.
 
@@ -100,7 +100,7 @@ Examine your flow and see where the issue is.
 ![Change the port to 1433](img/prepbuilder_step12_editport.png)
 
 
-# Test and verify #
+# Test and Ferify the Fix #
 
 * Click the test connection button and verify that the Tableau server can successfully reach the MSSQL db.
 * Run your flow again and check for a successful run.
@@ -108,7 +108,7 @@ Examine your flow and see where the issue is.
 
 ![Eureka - success!](img/prepbuilder_step13_success.png)
 
-# Set up a task scheduler #
+# Set up a Tableau Server Task Scheduler #
 
 * Now that you know that your connection is working, it's time to schedule it to automatically update. Depending on your needs, you may need to set up a separate process to upload the data onto MSSQL.   Tableau Prep Builder 2020 will have new feature capability to export data from an external source to MSSQL, not only hyper or CSV outputs.   
 
