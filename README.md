@@ -89,7 +89,7 @@ Examine your flow and see where the issue is.
 
 ![We have an error](img/prepbuilder_step8_error.png)
 
-# Check your connection to the SQL Server out #
+# Check out your connection to the SQL Server #
 
 * Correct the error by adding a port 1433 to the MSSQL db.   If your MSSQL uses a different port than the default, use that one instead.  Ask your MSSSQL DBA for that information.  But try 1433 first.
 
