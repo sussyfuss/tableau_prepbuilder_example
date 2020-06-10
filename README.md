@@ -100,7 +100,7 @@ Examine your flow and see where the issue is.
 ![Change the port to 1433](img/prepbuilder_step12_editport.png)
 
 
-# Test and Ferify the Fix #
+# Test and Verify the Fix #
 
 * Click the test connection button and verify that the Tableau server can successfully reach the MSSQL db.
 * Run your flow again and check for a successful run.
